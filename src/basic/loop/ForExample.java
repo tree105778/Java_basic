@@ -32,11 +32,13 @@ public class ForExample {
         Scanner sc = new Scanner(System.in);
         System.out.print("정수를 입력하세요: ");
         int num = sc.nextInt();
-        int factorial = 1;
+
+        int fac = 1; // 팩토리얼 최종 값을 담을 변수
         for (int k = num; k >= 1; k--) {
-            factorial *= k;
+            fac *= k;
         }
-        System.out.println("factorial = " + factorial);
+        System.out.printf("%d! = %d", num, fac);
+
     }
 
 
